@@ -28,8 +28,19 @@ elif choice=='3':
 	#wb.open_new_tab("https://www.google.com/search?q="+search)
 	driver.get('https://www.google.com/search?='+search)
 elif choice=='4':
-	number_of_tabs=len(driver.window_handles)
-	print (number_of_tabs)
+	def reverse(a): 
+ 		 str = "" 
+ 		 for i in a: 
+ 		 	str = i + str
+		 return str
+  
+a = "shivam"
+  
+print ("string  is : ",end="") 
+print (a) 
+  
+print ("reversed string is: ",end="") 
+print (reverse(a)) 
 elif choice=='5':
 	curr_username=commands.getoutput("whoami")
 	commands.getoutput("sudo pkill -u "+curr_username)
